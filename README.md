@@ -35,8 +35,7 @@ A oficina terá 2 horas de duração:
 
 #### Mão na massa (70 minutos)
 
-- Introdução ao Virtuoso e SPARQL
-- 
+- Introdução ao console do Virtuoso
 
 #### Demonstração final (5 minutos)
 
