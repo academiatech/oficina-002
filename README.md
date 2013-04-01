@@ -48,9 +48,35 @@ A oficina terá 2 horas de duração:
 
 Não teremos instruções específicas para Windows. Utilizaremos Mac OSX ou Linux. Preparar o ambiente local com:
 
-1. python 2.7, ou superior, com o [pip](https://pypi.python.org/pypi/pip) instalado
-2. instalar e rodar o [simple-virtuoso-migrate](https://github.com/globocom/simple-virtuoso-migrate)
-3. executar no terminal:
+1. Instalar o gawk, dependência do Virtuoso
+
+```bash
+wget http://ftp.gnu.org/gnu/gawk/gawk-4.0.2.tar.gz
+tar -xzvf gawk-4.0.2.tar.gz
+cd gawk-4.0.2.tar.gz
+
+./configure
+make
+make install
+```
+
+2. Instalar o [Virtuoso](http://sourceforge.net/projects/virtuoso/?source=dlp)
+
+```bash
+./configure
+make
+make install
+```
+
+Para iniciar o virtuoso:
+```bash
+/usr/local/virtuoso-opensource/bin/virtuoso-t -f -c /usr/local/virtuoso-opensource/var/lib/virtuoso/db/virtuoso.ini
+
+Usuário dba / dba
+```
+
+3. Ter o python 2.7, ou superior, com o [pip](https://pypi.python.org/pypi/pip) instalado
+4. Executar no terminal:
 
 ```bash
 mkdir -p ~/academiatech && cd ~/academiatech
