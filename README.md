@@ -48,7 +48,7 @@ A oficina terá 2 horas de duração:
 
 Não teremos instruções específicas para Windows. Utilizaremos Mac OSX ou Linux. Preparar o ambiente local com:
 
-* 1. Instalar o gawk, dependência do Virtuoso
+* Instalar o gawk, dependência do Virtuoso
 
 ```bash
 wget http://ftp.gnu.org/gnu/gawk/gawk-4.0.2.tar.gz
@@ -60,7 +60,7 @@ make
 make install
 ```
 
-* 2. Instalar o [Virtuoso](http://sourceforge.net/projects/virtuoso/?source=dlp)
+* Instalar o [Virtuoso](http://sourceforge.net/projects/virtuoso/?source=dlp)
 
 ```bash
 ./configure
@@ -75,8 +75,8 @@ Para iniciar o virtuoso:
 Usuário dba / dba
 ```
 
-* 3. Ter o python 2.7, ou superior, com o [pip](https://pypi.python.org/pypi/pip) instalado
-* 4. Executar no terminal:
+* Ter o python 2.7, ou superior, com o [pip](https://pypi.python.org/pypi/pip) instalado
+* Executar no terminal:
 
 ```bash
 mkdir -p ~/academiatech && cd ~/academiatech
