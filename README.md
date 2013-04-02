@@ -11,7 +11,7 @@ Web Semântica na Prática: **Criando seu Primeiro Modelo Semântico**.
 
 ## Descrição
 
-Se você teve oportunidade de assistir o debate sobre web semântica e ficou querendo mais, essa é a oportunidade! Se você ainda não assistiu, confira [aqui](http://academiatech.com.br/agenda/web-semantica-os-desafios-por-tras-da-nova-web).
+Se você assistiu o debate sobre web semântica e ficou querendo mais, essa é a oportunidade! Se você ainda não assistiu, confira [aqui](http://academiatech.com.br/agenda/web-semantica-os-desafios-por-tras-da-nova-web).
 
 ## Resumo
 
