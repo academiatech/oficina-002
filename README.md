@@ -3,7 +3,8 @@
 
 Web Semântica na Prática: **Criando seu Primeiro Modelo Semântico**.
 
-Facilitadores
+Facilitadores:
+
 [Rômulo Jales](http://github.com/romulojales): Engenheiro da computação e aluno de mestrado pela PUC-RIO, atualmente trabalhando na globo.com como engenheiro de software para o globoesporte.com .
 
 [Victor Pantoja](http://github.com/victorpantoja): Engenheiro eletrônico e de computação pela UFRJ e mestre em informática pela PUC-Rio, atua desde 2005 como engenheiro de software naglobo.com tendo desenvolvido grandes portais como o globoesporte.com e também o fanstasy game Cartola FC.
@@ -51,9 +52,9 @@ A oficina terá 2 horas de duração:
 
 1. Assistir o debate sobre web semântica [aqui](http://academiatech.com.br/agenda/web-semantica-os-desafios-por-tras-da-nova-web)
 2. Levar seu notebook (nós forneceremos uma instalação do virtuoso)
-2. [Virtuoso](https://github.com/academiatech/oficina-002/wiki/Virtuoso)
-3. Instalar python 2.7, ou superior, com o [pip](https://pypi.python.org/pypi/pip) instalado
-4. Executar no terminal:
+3. Instalar o [Virtuoso](https://github.com/academiatech/oficina-002/wiki/Virtuoso)
+4. Instalar o python 2.7, ou superior, com o [pip](https://pypi.python.org/pypi/pip) instalado
+5. Configurar o virtualenv. Executar no terminal:
 
 ```bash
 mkdir -p ~/academiatech && cd ~/academiatech
