@@ -46,6 +46,7 @@ A oficina terá 2 horas de duração:
 ## Pré-requisitos
 
 Não teremos instruções específicas para Windows. Utilizaremos Mac OSX ou Linux. Preparar o ambiente local com:
+
 1. Virtuoso
 2. python 2.7, ou superior, com o [pip](https://pypi.python.org/pypi/pip) instalado
 3. Executar no terminal:
