@@ -3,11 +3,11 @@
 
 Web Semântica na Prática: **Criando seu Primeiro Modelo Semântico**.
 
-Facilitadores:
+**Facilitadores:**
 
 [Rômulo Jales](http://github.com/romulojales): Engenheiro da computação e aluno de mestrado pela PUC-RIO, atualmente trabalhando na globo.com como engenheiro de software para o globoesporte.com .
 
-[Victor Pantoja](http://github.com/victorpantoja): Engenheiro eletrônico e de computação pela UFRJ e mestre em informática pela PUC-Rio, atua desde 2005 como engenheiro de software naglobo.com tendo desenvolvido grandes portais como o globoesporte.com e também o fanstasy game Cartola FC.
+[Victor Pantoja](http://github.com/victorpantoja): Engenheiro eletrônico e de computação pela UFRJ e mestre em informática pela PUC-Rio, atua desde 2005 como engenheiro de software na globo.com tendo desenvolvido grandes portais como o globoesporte.com e também o fanstasy game Cartola FC.
 
 ## Descrição
 
