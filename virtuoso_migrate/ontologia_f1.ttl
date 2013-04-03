@@ -11,11 +11,24 @@
 #    Classes
 #
 #################################################################
-###  http://semantica.globo.com/base/slug_topico
+###  http://semantica.academiatech.com/oficina002/slug_topico
 :slug_topico 	      rdf:type owl:DatatypeProperty ;
                       rdfs:label "Slug da Entidade" ;
                       rdfs:range xsd:string ;
+					  rdfs:domain :EdicaoCampeonato;
                       rdfs:domain :Campeonato.
+
+:nome 	      rdf:type owl:DatatypeProperty ;
+                      rdfs:label "Nome da Entidade" ;
+                      rdfs:range xsd:string ;
+					  rdfs:domain :Autodromo;
+					  rdfs:domain :EdicaoCampeonato;
+                      rdfs:domain :Campeonato.
+
+:local 	      rdf:type owl:DatatypeProperty ;
+                      rdfs:label "Local de realização" ;
+                      rdfs:range xsd:string ;
+					  rdfs:domain :Autodromo.
 
 ###  http://semantica.academiatech.com/oficina002/Campeonato
 
@@ -25,12 +38,27 @@
         owl:onProperty :slug_topico ;
         owl:onDataRange rdf:XMLLiteral ;
         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+    ],
+    [   rdf:type    owl:Restriction ;
+        owl:onProperty :nome ;
+        owl:onDataRange rdf:XMLLiteral ;
+        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
     ].
 
 
 ###  http://semantica.academiatech.com/oficina002/EdicaoCampeonato
 :EdicaoCampeonato	rdf:type	owl:Class ;
-	rdfs:label	"Edição de Campeonato" .
+	rdfs:label	"Edição de Campeonato" ,
+    [   rdf:type    owl:Restriction ;
+        owl:onProperty :slug_topico ;
+        owl:onDataRange rdf:XMLLiteral ;
+        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+    ],
+    [   rdf:type    owl:Restriction ;
+        owl:onProperty :nome ;
+        owl:onDataRange rdf:XMLLiteral ;
+        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+    ].
 
 ###  http://semantica.academiatech.com/oficina002/Equipe
 :Equipe	rdf:type	owl:Class ;
@@ -42,7 +70,17 @@
 
 ###  http://semantica.academiatech.com/oficina002/Autodromo
 :Autodromo	rdf:type	owl:Class ;
-	rdfs:label	"Autódromo" .
+	rdfs:label	"Autódromo",
+    [   rdf:type    owl:Restriction ;
+        owl:onProperty :nome ;
+        owl:onDataRange rdf:XMLLiteral ;
+        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+    ],
+    [   rdf:type    owl:Restriction ;
+        owl:onProperty :local ;
+        owl:onDataRange rdf:XMLLiteral ;
+        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+    ].
 
 ###  http://semantica.academiatech.com/oficina002/ClassificacaoConstrutores
 :ClassificacaoConstrutores	rdf:type	owl:Class ;
