@@ -1,0 +1,9 @@
+DATABASE_HOST             localhost
+DATABASE_USER             dba
+DATABASE_PASSWORD         dba
+DATABASE_PORT             1111
+DATABASE_ENDPOINT         "http://localhost:8890/sparql"
+DATABASE_GRAPH            http://semantica.academiatech.com/oficina002/
+DATABASE_MIGRATIONS_DIR   ../virtuoso_migrate
+DATABASE_ONTOLOGY         ontologia_f1.ttl
+MIGRATION_GRAPH           Name of the graph that keeps migration's information.

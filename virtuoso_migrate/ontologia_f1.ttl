@@ -1,0 +1,55 @@
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix :	<http://semantica.academiatech.com/oficina002/> .
+@prefix owl:	<http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
+@prefix ns6:	<http://dbpedia.org/ontology/> .
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+###  http://semantica.globo.com/base/slug_topico
+:slug_topico 	      rdf:type owl:DatatypeProperty ;
+                      rdfs:label "Slug da Entidade" ;
+                      rdfs:range xsd:string ;
+                      rdfs:domain :Agregador ;
+                      rdfs:domain :Entidade .
+
+###  http://semantica.academiatech.com/oficina002/campeonato
+
+:Campeonato	rdf:type	owl:Class ;
+	rdfs:label	"Campeonato" ,
+    [   rdf:type    owl:Restriction ;
+        owl:onProperty :slug_topico ;
+        owl:onDataRange rdf:XMLLiteral ;
+        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+    ].
+
+
+###  http://semantica.academiatech.com/oficina002/edicao_campeonato
+
+###  http://semantica.academiatech.com/oficina002/equipe
+
+###  http://semantica.academiatech.com/oficina002/piloto
+
+###  http://semantica.academiatech.com/oficina002/autodromo
+
+###  http://semantica.academiatech.com/oficina002/classificacao_construtores
+
+###  http://semantica.academiatech.com/oficina002/classificacao_pilotos
+
+###  http://semantica.academiatech.com/oficina002/corrida
+
+###  http://semantica.academiatech.com/oficina002/criterios_pontuacao
+
+###  http://semantica.academiatech.com/oficina002/gp
+
+###  http://semantica.academiatech.com/oficina002/grid_largada
+
+###  http://semantica.academiatech.com/oficina002/pontos_extras
+
+###  http://semantica.academiatech.com/oficina002/resultado
