@@ -6,7 +6,6 @@
 @prefix ns6:	<http://dbpedia.org/ontology/> .
 
 
-
 #################################################################
 #
 #    Classes
@@ -16,10 +15,9 @@
 :slug_topico 	      rdf:type owl:DatatypeProperty ;
                       rdfs:label "Slug da Entidade" ;
                       rdfs:range xsd:string ;
-                      rdfs:domain :Agregador ;
-                      rdfs:domain :Entidade .
+                      rdfs:domain :Campeonato.
 
-###  http://semantica.academiatech.com/oficina002/campeonato
+###  http://semantica.academiatech.com/oficina002/Campeonato
 
 :Campeonato rdf:type	owl:Class ;
 	rdfs:label	"Campeonato" ,
@@ -30,50 +28,46 @@
     ].
 
 
-###  http://semantica.academiatech.com/oficina002/edicao_campeonato
+###  http://semantica.academiatech.com/oficina002/EdicaoCampeonato
 :EdicaoCampeonato	rdf:type	owl:Class ;
 	rdfs:label	"Edição de Campeonato" .
 
-###  http://semantica.academiatech.com/oficina002/equipe
+###  http://semantica.academiatech.com/oficina002/Equipe
 :Equipe	rdf:type	owl:Class ;
 	rdfs:label	"Equipe" .
 
-###  http://semantica.academiatech.com/oficina002/piloto
+###  http://semantica.academiatech.com/oficina002/Piloto
 :Piloto	rdf:type	owl:Class ;
 	rdfs:label	"Piloto" .
 
-###  http://semantica.academiatech.com/oficina002/autodromo
+###  http://semantica.academiatech.com/oficina002/Autodromo
 :Autodromo	rdf:type	owl:Class ;
 	rdfs:label	"Autódromo" .
 
-###  http://semantica.academiatech.com/oficina002/classificacao_construtores
+###  http://semantica.academiatech.com/oficina002/ClassificacaoConstrutores
 :ClassificacaoConstrutores	rdf:type	owl:Class ;
 	rdfs:label	"Classificação de Construtores" .
 
-###  http://semantica.academiatech.com/oficina002/classificacao_pilotos
+###  http://semantica.academiatech.com/oficina002/ClassificacaoPilotos
 :ClassificacaoPilotos	rdf:type	owl:Class ;
 	rdfs:label	"Classificação de Pilotos" .
 
-###  http://semantica.academiatech.com/oficina002/corrida
+###  http://semantica.academiatech.com/oficina002/Corrida
 :Corrida	rdf:type	owl:Class ;
 	rdfs:label	"Corrida" .
 
-###  http://semantica.academiatech.com/oficina002/criterios_pontuacao
+###  http://semantica.academiatech.com/oficina002/CriteriosPontuacao
 :CriteriosPontuacao	rdf:type	owl:Class ;
 	rdfs:label	"Critérios de Pontuação" .
 
-###  http://semantica.academiatech.com/oficina002/gp
+###  http://semantica.academiatech.com/oficina002/GP
 :GP	rdf:type	owl:Class ;
 	rdfs:label	"GP" .
 
-###  http://semantica.academiatech.com/oficina002/grid_largada
+###  http://semantica.academiatech.com/oficina002/GridLargada
 :GridLargada	rdf:type	owl:Class ;
 	rdfs:label	"Grid de Largada" .
 
-###  http://semantica.academiatech.com/oficina002/pontos_extras
-:PontosExtras	rdf:type	owl:Class ;
-	rdfs:label	"Pontos Extras" .
-
-###  http://semantica.academiatech.com/oficina002/resultado
+###  http://semantica.academiatech.com/oficina002/Resultado
 :Resultado	rdf:type	owl:Class ;
 	rdfs:label	"Resultado" .
