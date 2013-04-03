@@ -21,7 +21,7 @@
 
 ###  http://semantica.academiatech.com/oficina002/campeonato
 
-:Campeonato	rdf:type	owl:Class ;
+:Campeonato rdf:type	owl:Class ;
 	rdfs:label	"Campeonato" ,
     [   rdf:type    owl:Restriction ;
         owl:onProperty :slug_topico ;
@@ -31,25 +31,49 @@
 
 
 ###  http://semantica.academiatech.com/oficina002/edicao_campeonato
+:EdicaoCampeonato	rdf:type	owl:Class ;
+	rdfs:label	"Edição de Campeonato" .
 
 ###  http://semantica.academiatech.com/oficina002/equipe
+:Equipe	rdf:type	owl:Class ;
+	rdfs:label	"Equipe" .
 
 ###  http://semantica.academiatech.com/oficina002/piloto
+:Piloto	rdf:type	owl:Class ;
+	rdfs:label	"Piloto" .
 
 ###  http://semantica.academiatech.com/oficina002/autodromo
+:Autodromo	rdf:type	owl:Class ;
+	rdfs:label	"Autódromo" .
 
 ###  http://semantica.academiatech.com/oficina002/classificacao_construtores
+:ClassificacaoConstrutores	rdf:type	owl:Class ;
+	rdfs:label	"Classificação de Construtores" .
 
 ###  http://semantica.academiatech.com/oficina002/classificacao_pilotos
+:ClassificacaoPilotos	rdf:type	owl:Class ;
+	rdfs:label	"Classificação de Pilotos" .
 
 ###  http://semantica.academiatech.com/oficina002/corrida
+:Corrida	rdf:type	owl:Class ;
+	rdfs:label	"Corrida" .
 
 ###  http://semantica.academiatech.com/oficina002/criterios_pontuacao
+:CriteriosPontuacao	rdf:type	owl:Class ;
+	rdfs:label	"Critérios de Pontuação" .
 
 ###  http://semantica.academiatech.com/oficina002/gp
+:GP	rdf:type	owl:Class ;
+	rdfs:label	"GP" .
 
 ###  http://semantica.academiatech.com/oficina002/grid_largada
+:GridLargada	rdf:type	owl:Class ;
+	rdfs:label	"Grid de Largada" .
 
 ###  http://semantica.academiatech.com/oficina002/pontos_extras
+:PontosExtras	rdf:type	owl:Class ;
+	rdfs:label	"Pontos Extras" .
 
 ###  http://semantica.academiatech.com/oficina002/resultado
+:Resultado	rdf:type	owl:Class ;
+	rdfs:label	"Resultado" .
