@@ -266,3 +266,48 @@
         owl:onDataRange rdf:XMLLiteral ;
         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
     ].
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+:do_campeonato	rdf:type	owl:ObjectProperty ,
+		rdf:Property ;
+	rdfs:label	"Do campeonato" ;
+	rdfs:domain	:EdicaoCampeonato;
+	rdfs:range	:Campeonato.
+
+:da_edicao_campeonato	rdf:type	owl:ObjectProperty ,
+	rdf:Property ;
+	rdfs:label	"Da edição do campeonato" ;
+	rdfs:domain	:CriteriosPontuacao,
+		:Corrida ,
+		:Competicao ,
+		:ClassificacaoPilotos ,
+		:ClassificacaoConstrutores;
+	rdfs:range	:EdicaoCampeonato.
+	
+:do_piloto	rdf:type	owl:ObjectProperty ,
+	rdf:Property ;
+	rdfs:label	"Piloto" ;
+	rdfs:domain	:Grid,
+		:ClassificacaoPilotos ,
+		:Resultado;
+	rdfs:range	:EdicaoCampeonato.
+
+
+#corrida
+:realizada_no_autodromo
+:do_gp
+
+#grid
+:da_corrida
+
+#construtores
+:da_equipe
+
+
+#resultado
+:da_corrida
+:do_piloto
