@@ -53,8 +53,32 @@
     rdfs:domain	:Corrida ;
     rdfs:range	rdf:XMLLiteral .
 
-###  http://semantica.academiatech.com/oficina002/Campeonato
+:pontos	rdf:type	owl:DatatypeProperty ;
+    rdfs:label	"Pontos" ;
+    rdfs:domain	:ClassificacaoConstrutores ;
+    rdfs:domain	:ClassificacaoPilotos ;
+    rdfs:domain	:CriteriosPontuacao ;
+    rdfs:range	rdf:XMLLiteral .
 
+:vitorias	rdf:type	owl:DatatypeProperty ;
+    rdfs:label	"Vitórias" ;
+    rdfs:domain	:ClassificacaoConstrutores ;
+    rdfs:domain	:ClassificacaoPilotos ;
+    rdfs:range	rdf:XMLLiteral .
+
+:posicao	rdf:type	owl:DatatypeProperty ;
+    rdfs:label	"Posição" ;
+    rdfs:domain	:ClassificacaoConstrutores ;
+    rdfs:domain	:ClassificacaoPilotos ;
+    rdfs:domain	:CriteriosPontuacao ;
+    rdfs:range	rdf:XMLLiteral .
+
+:fila	rdf:type	owl:DatatypeProperty ;
+    rdfs:label	"Fila de largada" ;
+    rdfs:domain	:GridLargada ;
+    rdfs:range	rdf:XMLLiteral .
+
+###  http://semantica.academiatech.com/oficina002/Campeonato
 :Campeonato rdf:type	owl:Class ;
 	rdfs:label	"Campeonato" ,
     [   rdf:type    owl:Restriction ;
@@ -122,11 +146,41 @@
 
 ###  http://semantica.academiatech.com/oficina002/ClassificacaoConstrutores
 :ClassificacaoConstrutores	rdf:type	owl:Class ;
-	rdfs:label	"Classificação de Construtores" .
+	rdfs:label	"Classificação de Construtores",
+    [   rdf:type    owl:Restriction ;
+        owl:onProperty :pontos ;
+        owl:onDataRange rdf:XMLLiteral ;
+        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+    ],
+    [   rdf:type    owl:Restriction ;
+        owl:onProperty :vitoria ;
+        owl:onDataRange rdf:XMLLiteral ;
+        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+    ],
+    [   rdf:type    owl:Restriction ;
+        owl:onProperty :posicao ;
+        owl:onDataRange rdf:XMLLiteral ;
+        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+    ].
 
 ###  http://semantica.academiatech.com/oficina002/ClassificacaoPilotos
 :ClassificacaoPilotos	rdf:type	owl:Class ;
-	rdfs:label	"Classificação de Pilotos" .
+	rdfs:label	"Classificação de Pilotos",
+    [   rdf:type    owl:Restriction ;
+        owl:onProperty :pontos ;
+        owl:onDataRange rdf:XMLLiteral ;
+        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+    ],
+    [   rdf:type    owl:Restriction ;
+        owl:onProperty :vitoria ;
+        owl:onDataRange rdf:XMLLiteral ;
+        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+    ],
+    [   rdf:type    owl:Restriction ;
+        owl:onProperty :posicao ;
+        owl:onDataRange rdf:XMLLiteral ;
+        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+    ].
 
 ###  http://semantica.academiatech.com/oficina002/Corrida
 :Corrida	rdf:type	owl:Class ;
@@ -159,7 +213,17 @@
 
 ###  http://semantica.academiatech.com/oficina002/CriteriosPontuacao
 :CriteriosPontuacao	rdf:type	owl:Class ;
-	rdfs:label	"Critérios de Pontuação" .
+	rdfs:label	"Critérios de Pontuação",
+    [   rdf:type    owl:Restriction ;
+        owl:onProperty :pontos ;
+        owl:onDataRange rdf:XMLLiteral ;
+        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+    ],
+    [   rdf:type    owl:Restriction ;
+        owl:onProperty :posicao ;
+        owl:onDataRange rdf:XMLLiteral ;
+        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+    ].
 
 ###  http://semantica.academiatech.com/oficina002/GP
 :GP	rdf:type	owl:Class ;
@@ -172,8 +236,33 @@
 
 ###  http://semantica.academiatech.com/oficina002/GridLargada
 :GridLargada	rdf:type	owl:Class ;
-	rdfs:label	"Grid de Largada" .
+	rdfs:label	"Grid de Largada",
+    [   rdf:type    owl:Restriction ;
+        owl:onProperty :fila ;
+        owl:onDataRange rdf:XMLLiteral ;
+        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+    ],
+    [   rdf:type    owl:Restriction ;
+        owl:onProperty :tempo ;
+        owl:onDataRange rdf:XMLLiteral ;
+        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+    ],
+    [   rdf:type    owl:Restriction ;
+        owl:onProperty :ordem ;
+        owl:onDataRange rdf:XMLLiteral ;
+        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+    ].
 
 ###  http://semantica.academiatech.com/oficina002/Resultado
 :Resultado	rdf:type	owl:Class ;
-	rdfs:label	"Resultado" .
+	rdfs:label	"Resultado",
+    [   rdf:type    owl:Restriction ;
+        owl:onProperty :tempo ;
+        owl:onDataRange rdf:XMLLiteral ;
+        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+    ],
+    [   rdf:type    owl:Restriction ;
+        owl:onProperty :ordem ;
+        owl:onDataRange rdf:XMLLiteral ;
+        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+    ].
