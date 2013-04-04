@@ -11,24 +11,47 @@
 #    Classes
 #
 #################################################################
-###  http://semantica.academiatech.com/oficina002/slug_topico
 :slug_topico 	      rdf:type owl:DatatypeProperty ;
                       rdfs:label "Slug da Entidade" ;
                       rdfs:range xsd:string ;
 					  rdfs:domain :EdicaoCampeonato;
+					  rdfs:domain :Piloto;
                       rdfs:domain :Campeonato.
 
 :nome 	      rdf:type owl:DatatypeProperty ;
-                      rdfs:label "Nome da Entidade" ;
-                      rdfs:range xsd:string ;
-					  rdfs:domain :Autodromo;
-					  rdfs:domain :EdicaoCampeonato;
-                      rdfs:domain :Campeonato.
+              rdfs:label "Nome da Entidade" ;
+              rdfs:range xsd:string ;
+			  rdfs:domain :Autodromo;
+			  rdfs:domain :EdicaoCampeonato;
+			  rdfs:domain :Equipe;
+			  rdfs:domain :Piloto;
+			  rdfs:domain :GP;
+              rdfs:domain :Campeonato.
 
 :local 	      rdf:type owl:DatatypeProperty ;
-                      rdfs:label "Local de realização" ;
-                      rdfs:range xsd:string ;
-					  rdfs:domain :Autodromo.
+              rdfs:label "Local de realização" ;
+              rdfs:range xsd:string ;
+			  rdfs:domain :Autodromo.
+					
+:data_de_realizacao rdf:type owl:DatatypeProperty ;
+                   	rdfs:label "Data de realização" ;
+                  	rdfs:range xsd:dateTime ;
+                  	rdfs:domain :Corrida .
+					
+:voltas_previstas	rdf:type	owl:DatatypeProperty ;
+    rdfs:label	"Número de Voltas Previstas" ;
+    rdfs:domain	:Corrida ;
+    rdfs:range	rdf:XMLLiteral .
+
+:voltas_realizadas	rdf:type	owl:DatatypeProperty ;
+    rdfs:label	"Número de Voltas Realizadas" ;
+    rdfs:domain	:Corrida ;
+    rdfs:range	rdf:XMLLiteral .
+
+:tempo	rdf:type	owl:DatatypeProperty ;
+    rdfs:label	"Duração da Corrida" ;
+    rdfs:domain	:Corrida ;
+    rdfs:range	rdf:XMLLiteral .
 
 ###  http://semantica.academiatech.com/oficina002/Campeonato
 
@@ -62,11 +85,26 @@
 
 ###  http://semantica.academiatech.com/oficina002/Equipe
 :Equipe	rdf:type	owl:Class ;
-	rdfs:label	"Equipe" .
+	rdfs:label	"Equipe" ,
+    [   rdf:type    owl:Restriction ;
+        owl:onProperty :nome ;
+        owl:onDataRange rdf:XMLLiteral ;
+        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+    ].
 
 ###  http://semantica.academiatech.com/oficina002/Piloto
 :Piloto	rdf:type	owl:Class ;
-	rdfs:label	"Piloto" .
+	rdfs:label	"Piloto",
+    [   rdf:type    owl:Restriction ;
+        owl:onProperty :slug_topico ;
+        owl:onDataRange rdf:XMLLiteral ;
+        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+    ],
+    [   rdf:type    owl:Restriction ;
+        owl:onProperty :nome ;
+        owl:onDataRange rdf:XMLLiteral ;
+        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+    ].
 
 ###  http://semantica.academiatech.com/oficina002/Autodromo
 :Autodromo	rdf:type	owl:Class ;
@@ -92,7 +130,32 @@
 
 ###  http://semantica.academiatech.com/oficina002/Corrida
 :Corrida	rdf:type	owl:Class ;
-	rdfs:label	"Corrida" .
+	rdfs:label	"Corrida",
+    [   rdf:type    owl:Restriction ;
+        owl:onProperty :slug_topico ;
+        owl:onDataRange rdf:XMLLiteral ;
+        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+    ],
+    [   rdf:type    owl:Restriction ;
+        owl:onProperty :voltas_previstas ;
+        owl:onDataRange rdf:XMLLiteral ;
+        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+    ],
+    [   rdf:type    owl:Restriction ;
+        owl:onProperty :voltas_realizadas ;
+        owl:onDataRange rdf:XMLLiteral ;
+        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+    ],
+    [   rdf:type    owl:Restriction ;
+        owl:onProperty :tempo ;
+        owl:onDataRange rdf:XMLLiteral ;
+        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+    ],
+    [   rdf:type    owl:Restriction ;
+        owl:onProperty :data_de_realizacao ;
+        owl:onDataRange rdf:XMLLiteral ;
+        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+    ].
 
 ###  http://semantica.academiatech.com/oficina002/CriteriosPontuacao
 :CriteriosPontuacao	rdf:type	owl:Class ;
@@ -100,7 +163,12 @@
 
 ###  http://semantica.academiatech.com/oficina002/GP
 :GP	rdf:type	owl:Class ;
-	rdfs:label	"GP" .
+	rdfs:label	"GP",
+    [   rdf:type    owl:Restriction ;
+        owl:onProperty :nome ;
+        owl:onDataRange rdf:XMLLiteral ;
+        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
+    ].
 
 ###  http://semantica.academiatech.com/oficina002/GridLargada
 :GridLargada	rdf:type	owl:Class ;
