@@ -296,18 +296,27 @@
 		:Resultado;
 	rdfs:range	:EdicaoCampeonato.
 
+:realizada_no_autodromo	rdf:type	owl:ObjectProperty ,
+	rdf:Property ;
+	rdfs:label	"Autódromo" ;
+	rdfs:domain	:Corrida;
+	rdfs:range	:Autodromo.
 
-#corrida
-:realizada_no_autodromo
-:do_gp
+:do_gp	rdf:type	owl:ObjectProperty ,
+	rdf:Property ;
+	rdfs:label	"Do Grande Prêmio" ;
+	rdfs:domain	:Corrida;
+	rdfs:range	:GP.
 
-#grid
-:da_corrida
+:da_corrida	rdf:type	owl:ObjectProperty ,
+		rdf:Property ;
+		rdfs:label	"Do Grande Prêmio" ;
+		rdfs:domain	:Grid,
+					:Resultado;
+		rdfs:range	:Corrida.
 
-#construtores
-:da_equipe
-
-
-#resultado
-:da_corrida
-:do_piloto
+:da_equipe	rdf:type	owl:ObjectProperty ,
+		rdf:Property ;
+		rdfs:label	"Da equipe";
+		rdfs:domain	:ClassificacaoConstrutores;
+		rdfs:range	:Equipe.
