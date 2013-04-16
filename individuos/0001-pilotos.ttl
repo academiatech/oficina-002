@@ -10,4 +10,15 @@ INSERT INTO <http://semantica.academiatech.com/oficina002/>
 { 
   <http://semantica.academiatech.com/oficina002/Piloto> academia:nome "Felipe Massa" ;
           academia:slug_topico "felipe-massa" .
+  <http://semantica.academiatech.com/oficina002/Piloto> academia:nome "Sebastian Vettel" ;
+          academia:slug_topico "sebastian-vettel" .
+  <http://semantica.academiatech.com/oficina002/Piloto> academia:nome "Mark Webber" ;
+          academia:slug_topico "mark-webber" .
+  <http://semantica.academiatech.com/oficina002/Piloto> academia:nome "Kimi Raikkonen" ;
+          academia:slug_topico "kimi-raikkonen" .
+  <http://semantica.academiatech.com/oficina002/Piloto> academia:nome "Romain Grosjean" ;
+          academia:slug_topico "romain-grosjean" .
+  <http://semantica.academiatech.com/oficina002/Piloto> academia:nome "Fernando Alonso" ;
+          academia:slug_topico "fernando-alonso" .
 }
+
