@@ -1,0 +1,13 @@
+# Try executing the following from isql as the "dba" user:
+# >
+# > grant execute on SPARQL_INSERT_DICT_CONTENT to "SPARQL"
+# > grant execute on SPARQL_INSERT_DICT_CONTENT to SPARQL_UPDATE
+# >
+
+
+prefix academia: <http://semantica.academiatech.com/oficina002/>
+INSERT INTO <http://semantica.academiatech.com/oficina002/>
+{ 
+  <http://semantica.academiatech.com/oficina002/Piloto> academia:nome "Felipe Massa" ;
+          academia:slug_topico "felipe-massa" .
+}
