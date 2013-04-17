@@ -3,7 +3,6 @@
 @prefix owl:	<http://www.w3.org/2002/07/owl#> .
 @prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
-@prefix ns6:	<http://dbpedia.org/ontology/> .
 
 
 #################################################################
@@ -272,8 +271,7 @@
 #    Object Properties
 #
 #################################################################
-:do_campeonato	rdf:type	owl:ObjectProperty ,
-		rdf:Property ;
+:do_campeonato	rdf:type	owl:ObjectProperty;
 	rdfs:label	"Do campeonato" ;
 	rdfs:domain	:EdicaoCampeonato;
 	rdfs:range	:Campeonato.
