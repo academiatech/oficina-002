@@ -23,7 +23,7 @@ Os desenvolvedores criarão a ontologia baseada no nosso input (domínio e dicio
 
 Os TTLs serão criados aos poucos, com nosso auxílio. Os desenvolvedores irão criar as queries para inserir dados iniciais na ontologia.
 
-A seguir, faremos consultados SPARQL no grafo que criamos no Virtuoso e explicaremos, na prática, os paradigmas dessa abordagem de programação.
+A seguir, faremos consultas SPARQL no grafo que criamos no Virtuoso e explicaremos, na prática, os paradigmas dessa abordagem de programação.
 
 Esperamos com essa oficina que os desenvolvedores saiam com vontade de utilizar semântica em suas apliações
 

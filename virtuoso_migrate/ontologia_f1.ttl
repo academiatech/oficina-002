@@ -308,7 +308,7 @@
 
 :da_corrida	rdf:type	owl:ObjectProperty ,
 		rdf:Property ;
-		rdfs:label	"Do Grande Prêmio" ;
+		rdfs:label	"Da corrida" ;
 		rdfs:domain	:Grid,
 					:Resultado;
 		rdfs:range	:Corrida.
