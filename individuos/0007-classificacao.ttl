@@ -1,0 +1,33 @@
+prefix academia: <http://semantica.academiatech.com/oficina002/>
+INSERT INTO <http://semantica.academiatech.com/oficina002/ClassificacaoPilotos>
+{ 
+  <http://semantica.academiatech.com/oficina002/ClassificacaoPilotos/1> academia:posicao "1" ;
+          academia:pontos "52" ;
+          academia:vitoria "1" .
+  <http://semantica.academiatech.com/oficina002/ClassificacaoPilotos/2> academia:posicao "2" ;
+		  academia:pontos "49" ;
+		  academia:vitoria "1" .
+  <http://semantica.academiatech.com/oficina002/ClassificacaoPilotos/3> academia:posicao "3" ;
+		  academia:pontos "43" ;
+		  academia:vitoria "1" .
+  <http://semantica.academiatech.com/oficina002/ClassificacaoPilotos/4> academia:posicao "4" ;
+		  academia:pontos "0" ;
+		  academia:vitoria "0" .
+  <http://semantica.academiatech.com/oficina002/ClassificacaoPilotos/5> academia:posicao "5" ;
+		  academia:pontos "0" ;
+		  academia:vitoria "0" .
+  <http://semantica.academiatech.com/oficina002/ClassificacaoPilotos/6> academia:posicao "6" ;
+		  academia:pontos "0" ;
+		  academia:vitoria "0" .
+}
+
+prefix academia: <http://semantica.academiatech.com/oficina002/>
+INSERT INTO <http://semantica.academiatech.com/oficina002/ClassificacaoConstrutores>
+{ 
+  <http://semantica.academiatech.com/oficina002/ClassificacaoConstrutores/1> academia:posicao "1" ;
+          academia:pontos "78".
+  <http://semantica.academiatech.com/oficina002/ClassificacaoConstrutores/2> academia:posicao "2" ;
+		  academia:pontos "73".
+  <http://semantica.academiatech.com/oficina002/ClassificacaoConstrutores/3> academia:posicao "3" ;
+		  academia:pontos "60".
+}
