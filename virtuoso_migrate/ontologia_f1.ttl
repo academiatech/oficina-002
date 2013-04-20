@@ -129,20 +129,6 @@
         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
     ].
 
-###  http://semantica.academiatech.com/oficina002/Autodromo
-:Autodromo	rdf:type	owl:Class ;
-	rdfs:label	"Autódromo",
-    [   rdf:type    owl:Restriction ;
-        owl:onProperty :nome ;
-        owl:onDataRange rdf:XMLLiteral ;
-        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
-    ],
-    [   rdf:type    owl:Restriction ;
-        owl:onProperty :local ;
-        owl:onDataRange rdf:XMLLiteral ;
-        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
-    ].
-
 ###  http://semantica.academiatech.com/oficina002/ClassificacaoConstrutores
 :ClassificacaoConstrutores	rdf:type	owl:Class ;
 	rdfs:label	"Classificação de Construtores",
@@ -302,8 +288,9 @@
 	rdfs:domain	:Corrida;
 	rdfs:range	:GP.
 
+
 :da_corrida	rdf:type	owl:ObjectProperty;
-		rdfs:label	"Do Grande Prêmio" ;
+		rdfs:label	"Da corrida" ;
 		rdfs:domain	:Grid,
 					:Resultado;
 		rdfs:range	:Corrida.

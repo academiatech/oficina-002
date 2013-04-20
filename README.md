@@ -23,7 +23,7 @@ Os desenvolvedores criarão a ontologia baseada no nosso input (domínio e dicio
 
 Os TTLs serão criados aos poucos, com nosso auxílio. Os desenvolvedores irão criar as queries para inserir dados iniciais na ontologia.
 
-A seguir, faremos consultados SPARQL no grafo que criamos no Virtuoso e explicaremos, na prática, os paradigmas dessa abordagem de programação.
+A seguir, faremos consultas SPARQL no grafo que criamos no Virtuoso e explicaremos, na prática, os paradigmas dessa abordagem de programação.
 
 Esperamos com essa oficina que os desenvolvedores saiam com vontade de utilizar semântica em suas apliações
 
@@ -33,20 +33,16 @@ A oficina terá 2 horas de duração:
 
 - Apresentação do tema da oficina
 
-#### Demonstração da solução (10 minutos)
 
-- apresentar o modelo MySQL
-- exibir a ontologia final
+#### Introduçao (20 minutos)
+- verificação do ambiente local
+- introdução ao console do virtuoso
 
-#### Mão na massa (70 minutos)
+#### Mão na massa (80 minutos)
+- Criação de TTLs
+- Queries de consulta e inclusão de dados.
 
-- Introdução ao console do Virtuoso
-
-#### Demonstração final (10 minutos)
-
-- exibir a ontologia criada durante o curso
-
-#### Considerações finais (20 minutos)
+#### Considerações finais (10 minutos)
 
 ## Pré-requisitos
 

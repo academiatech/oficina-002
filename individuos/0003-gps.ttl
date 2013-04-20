@@ -1,4 +1,8 @@
-Austrália (Melbourne), 17/03 às 03
-Malásia (Sepang), 24/03 às 05
-China (Xangai), 14/04 às 04h
-Bahrein (Sakhir), 21/04 às 09h
+prefix academia: <http://semantica.academiatech.com/oficina002/>
+INSERT INTO <http://semantica.academiatech.com/oficina002/GP>
+{ 
+  <http://semantica.academiatech.com/oficina002/GP/1> academia:nome "Austrália" .
+  <http://semantica.academiatech.com/oficina002/GP/2> academia:nome "Malásia".
+  <http://semantica.academiatech.com/oficina002/GP/3> academia:nome "China".
+  <http://semantica.academiatech.com/oficina002/GP/4> academia:nome "Bahrein".
+}
