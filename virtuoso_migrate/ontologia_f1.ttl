@@ -12,14 +12,14 @@
 #################################################################
 :slug_topico 	      rdf:type owl:DatatypeProperty ;
                       rdfs:label "Slug da Entidade" ;
-                      rdfs:range xsd:string ;
+                      rdfs:range rdf:XMLLiteral ;
 					  rdfs:domain :EdicaoCampeonato;
 					  rdfs:domain :Piloto;
                       rdfs:domain :Campeonato.
 
 :nome 	      rdf:type owl:DatatypeProperty ;
               rdfs:label "Nome da Entidade" ;
-              rdfs:range xsd:string ;
+              rdfs:range rdf:XMLLiteral ;
 			  rdfs:domain :Autodromo;
 			  rdfs:domain :EdicaoCampeonato;
 			  rdfs:domain :Equipe;
@@ -29,7 +29,7 @@
 
 :local 	      rdf:type owl:DatatypeProperty ;
               rdfs:label "Local de realização" ;
-              rdfs:range xsd:string ;
+              rdfs:range rdf:XMLLiteral ;
 			  rdfs:domain :Autodromo.
 					
 :data_de_realizacao rdf:type owl:DatatypeProperty ;
@@ -276,8 +276,7 @@
 	rdfs:domain	:EdicaoCampeonato;
 	rdfs:range	:Campeonato.
 
-:da_edicao_campeonato	rdf:type	owl:ObjectProperty ,
-	rdf:Property ;
+:da_edicao_campeonato	rdf:type	owl:ObjectProperty;
 	rdfs:label	"Da edição do campeonato" ;
 	rdfs:domain	:CriteriosPontuacao,
 		:Corrida ,
@@ -286,28 +285,24 @@
 		:ClassificacaoConstrutores;
 	rdfs:range	:EdicaoCampeonato.
 	
-:do_piloto	rdf:type	owl:ObjectProperty ,
-	rdf:Property ;
+:do_piloto	rdf:type	owl:ObjectProperty;
 	rdfs:label	"Piloto" ;
 	rdfs:domain	:Grid,
 		:ClassificacaoPilotos ,
 		:Resultado;
 	rdfs:range	:EdicaoCampeonato.
 
-:realizada_no_autodromo	rdf:type	owl:ObjectProperty ,
-	rdf:Property ;
+:realizada_no_autodromo	rdf:type	owl:ObjectProperty;
 	rdfs:label	"Autódromo" ;
 	rdfs:domain	:Corrida;
 	rdfs:range	:Autodromo.
 
-:do_gp	rdf:type	owl:ObjectProperty ,
-	rdf:Property ;
+:do_gp	rdf:type	owl:ObjectProperty;
 	rdfs:label	"Do Grande Prêmio" ;
 	rdfs:domain	:Corrida;
 	rdfs:range	:GP.
 
-:da_corrida	rdf:type	owl:ObjectProperty ,
-		rdf:Property ;
+:da_corrida	rdf:type	owl:ObjectProperty;
 		rdfs:label	"Do Grande Prêmio" ;
 		rdfs:domain	:Grid,
 					:Resultado;
