@@ -33,13 +33,16 @@ A oficina terá 2 horas de duração:
 
 - Apresentação do tema da oficina
 
-#### Mão na massa (90 minutos)
 
-- Introdução ao console do Virtuoso
+#### Introduçao (20 minutos)
+- verificação do ambiente local
+- introdução ao console do virtuoso
+
+#### Mão na massa (80 minutos)
 - Criação de TTLs
 - Queries de consulta e inclusão de dados.
 
-#### Considerações finais (20 minutos)
+#### Considerações finais (10 minutos)
 
 ## Pré-requisitos
 
