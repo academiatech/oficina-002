@@ -33,18 +33,11 @@ A oficina terá 2 horas de duração:
 
 - Apresentação do tema da oficina
 
-#### Demonstração da solução (10 minutos)
-
-- apresentar o modelo MySQL
-- exibir a ontologia final
-
-#### Mão na massa (70 minutos)
+#### Mão na massa (90 minutos)
 
 - Introdução ao console do Virtuoso
-
-#### Demonstração final (10 minutos)
-
-- exibir a ontologia criada durante o curso
+- Criação de TTLs
+- Queries de consulta e inclusão de dados.
 
 #### Considerações finais (20 minutos)
 
