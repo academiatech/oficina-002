@@ -1,0 +1,24 @@
+prefix academia: <http://semantica.academiatech.com/oficina002/>
+INSERT INTO <http://semantica.academiatech.com/oficina002/CriteriosPontuacao>
+{ 
+  <http://semantica.academiatech.com/oficina002/CriteriosPontuacao/1> academia:posicao "1" ;
+          academia:pontos "25" .
+  <http://semantica.academiatech.com/oficina002/CriteriosPontuacao/2> academia:posicao "2" ;
+          academia:pontos "20" .
+  <http://semantica.academiatech.com/oficina002/CriteriosPontuacao/3> academia:posicao "3" ;
+          academia:pontos "15" .
+  <http://semantica.academiatech.com/oficina002/CriteriosPontuacao/4> academia:posicao "4" ;
+          academia:pontos "10" .
+  <http://semantica.academiatech.com/oficina002/CriteriosPontuacao/5> academia:posicao "5" ;
+          academia:pontos "8" .
+  <http://semantica.academiatech.com/oficina002/CriteriosPontuacao/6> academia:posicao "6" ;
+          academia:pontos "6" .
+  <http://semantica.academiatech.com/oficina002/CriteriosPontuacao/3> academia:posicao "7" ;
+          academia:pontos "5" .
+  <http://semantica.academiatech.com/oficina002/CriteriosPontuacao/4> academia:posicao "8" ;
+          academia:pontos "3" .
+  <http://semantica.academiatech.com/oficina002/CriteriosPontuacao/5> academia:posicao "9" ;
+          academia:pontos "2" .
+  <http://semantica.academiatech.com/oficina002/CriteriosPontuacao/6> academia:posicao "10" ;
+          academia:pontos "1" .
+}
