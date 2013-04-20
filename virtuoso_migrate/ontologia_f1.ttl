@@ -20,17 +20,11 @@
 :nome 	      rdf:type owl:DatatypeProperty ;
               rdfs:label "Nome da Entidade" ;
               rdfs:range xsd:string ;
-			  rdfs:domain :Autodromo;
 			  rdfs:domain :EdicaoCampeonato;
 			  rdfs:domain :Equipe;
 			  rdfs:domain :Piloto;
 			  rdfs:domain :GP;
               rdfs:domain :Campeonato.
-
-:local 	      rdf:type owl:DatatypeProperty ;
-              rdfs:label "Local de realização" ;
-              rdfs:range xsd:string ;
-			  rdfs:domain :Autodromo.
 					
 :data_de_realizacao rdf:type owl:DatatypeProperty ;
                    	rdfs:label "Data de realização" ;
@@ -125,20 +119,6 @@
     ],
     [   rdf:type    owl:Restriction ;
         owl:onProperty :nome ;
-        owl:onDataRange rdf:XMLLiteral ;
-        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
-    ].
-
-###  http://semantica.academiatech.com/oficina002/Autodromo
-:Autodromo	rdf:type	owl:Class ;
-	rdfs:label	"Autódromo",
-    [   rdf:type    owl:Restriction ;
-        owl:onProperty :nome ;
-        owl:onDataRange rdf:XMLLiteral ;
-        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
-    ],
-    [   rdf:type    owl:Restriction ;
-        owl:onProperty :local ;
         owl:onDataRange rdf:XMLLiteral ;
         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger
     ].
@@ -293,12 +273,6 @@
 		:ClassificacaoPilotos ,
 		:Resultado;
 	rdfs:range	:EdicaoCampeonato.
-
-:realizada_no_autodromo	rdf:type	owl:ObjectProperty ,
-	rdf:Property ;
-	rdfs:label	"Autódromo" ;
-	rdfs:domain	:Corrida;
-	rdfs:range	:Autodromo.
 
 :do_gp	rdf:type	owl:ObjectProperty ,
 	rdf:Property ;
