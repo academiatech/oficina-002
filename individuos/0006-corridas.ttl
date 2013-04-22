@@ -1,20 +1,24 @@
 prefix academia: <http://semantica.academiatech.com/oficina002/>
-INSERT INTO <http://semantica.academiatech.com/oficina002/Corrida>
+INSERT INTO academia:
 { 
   <http://semantica.academiatech.com/oficina002/Corrida/1> academia:voltas_previstas "52";
 						academia:voltas_realizadas "52";
 						academia:tempo "1h20min";
-						academia:data_de_realizacao "2013-03-17T03:00".
+						academia:data_de_realizacao "2013-03-17T03:00";
+						rdfs:type academia:Corrida.
   <http://semantica.academiatech.com/oficina002/Corrida/2> academia:voltas_previstas "48";
 						academia:voltas_realizadas "48";
 						academia:tempo "1h03min";
-						academia:data_de_realizacao "2013-03-24T05:00".
+						academia:data_de_realizacao "2013-03-24T05:00";
+						rdfs:type academia:Corrida.
   <http://semantica.academiatech.com/oficina002/Corrida/3> academia:voltas_previstas "50";
 						academia:voltas_realizadas "50";
 						academia:tempo "1h01min";
-						academia:data_de_realizacao "2013-04-14T05:00".
+						academia:data_de_realizacao "2013-04-14T05:00";
+						rdfs:type academia:Corrida.
   <http://semantica.academiatech.com/oficina002/Corrida/4> academia:voltas_previstas "45";
 						academia:voltas_realizadas "45";
 						academia:tempo "1h13min";
-						academia:data_de_realizacao "2013-04-21T09:00".
+						academia:data_de_realizacao "2013-04-21T09:00";
+						rdfs:type academia:Corrida.
 }

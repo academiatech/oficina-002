@@ -1,8 +1,12 @@
 prefix academia: <http://semantica.academiatech.com/oficina002/>
-INSERT INTO <http://semantica.academiatech.com/oficina002/GP>
+INSERT INTO academia:
 { 
-  <http://semantica.academiatech.com/oficina002/GP/1> academia:nome "Austrália" .
-  <http://semantica.academiatech.com/oficina002/GP/2> academia:nome "Malásia".
-  <http://semantica.academiatech.com/oficina002/GP/3> academia:nome "China".
-  <http://semantica.academiatech.com/oficina002/GP/4> academia:nome "Bahrein".
+  <http://semantica.academiatech.com/oficina002/GP/1> academia:nome "Austrália";
+  rdfs:type academia:GP.
+  <http://semantica.academiatech.com/oficina002/GP/2> academia:nome "Malásia";
+    rdfs:type academia:GP.
+  <http://semantica.academiatech.com/oficina002/GP/3> academia:nome "China";
+      rdfs:type academia:GP.
+  <http://semantica.academiatech.com/oficina002/GP/4> academia:nome "Bahrein";
+        rdfs:type academia:GP.
 }

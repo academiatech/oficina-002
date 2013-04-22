@@ -1,7 +1,10 @@
 prefix academia: <http://semantica.academiatech.com/oficina002/>
-INSERT INTO <http://semantica.academiatech.com/oficina002/Equipe>
+INSERT INTO academia:
 { 
-  <http://semantica.academiatech.com/oficina002/Equipe/1> academia:nome "RBR" .
-  <http://semantica.academiatech.com/oficina002/Equipe/2> academia:nome "Lotus-Renault".
-  <http://semantica.academiatech.com/oficina002/Equipe/3> academia:nome "Ferrari".
+  <http://semantica.academiatech.com/oficina002/Equipe/1> academia:nome "RBR";
+  rdfs:type academia:Equipe.
+  <http://semantica.academiatech.com/oficina002/Equipe/2> academia:nome "Lotus-Renault";
+    rdfs:type academia:Equipe.
+  <http://semantica.academiatech.com/oficina002/Equipe/3> academia:nome "Ferrari"  ;
+      rdfs:type academia:Equipe.
 }

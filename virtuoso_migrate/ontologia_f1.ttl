@@ -79,7 +79,8 @@
 
 ###  http://semantica.academiatech.com/oficina002/Campeonato
 :Campeonato rdf:type	owl:Class ;
-	rdfs:label	"Campeonato" ,
+	rdfs:label	"Campeonato";
+	rdfs:subClassOf
     [   rdf:type    owl:Restriction ;
         owl:onProperty :slug_topico ;
         owl:onDataRange rdf:XMLLiteral ;
@@ -94,7 +95,8 @@
 
 ###  http://semantica.academiatech.com/oficina002/EdicaoCampeonato
 :EdicaoCampeonato	rdf:type	owl:Class ;
-	rdfs:label	"Edição de Campeonato" ,
+	rdfs:label	"Edição de Campeonato";
+	rdfs:subClassOf
     [   rdf:type    owl:Restriction ;
         owl:onProperty :slug_topico ;
         owl:onDataRange rdf:XMLLiteral ;
@@ -108,7 +110,8 @@
 
 ###  http://semantica.academiatech.com/oficina002/Equipe
 :Equipe	rdf:type	owl:Class ;
-	rdfs:label	"Equipe" ,
+	rdfs:label	"Equipe";
+	rdfs:subClassOf
     [   rdf:type    owl:Restriction ;
         owl:onProperty :nome ;
         owl:onDataRange rdf:XMLLiteral ;
@@ -117,7 +120,8 @@
 
 ###  http://semantica.academiatech.com/oficina002/Piloto
 :Piloto	rdf:type	owl:Class ;
-	rdfs:label	"Piloto",
+	rdfs:label	"Piloto";
+	rdfs:subClassOf
     [   rdf:type    owl:Restriction ;
         owl:onProperty :slug_topico ;
         owl:onDataRange rdf:XMLLiteral ;
@@ -131,7 +135,8 @@
 
 ###  http://semantica.academiatech.com/oficina002/ClassificacaoConstrutores
 :ClassificacaoConstrutores	rdf:type	owl:Class ;
-	rdfs:label	"Classificação de Construtores",
+	rdfs:label	"Classificação de Construtores";
+	rdfs:subClassOf
     [   rdf:type    owl:Restriction ;
         owl:onProperty :pontos ;
         owl:onDataRange rdf:XMLLiteral ;
@@ -150,7 +155,8 @@
 
 ###  http://semantica.academiatech.com/oficina002/ClassificacaoPilotos
 :ClassificacaoPilotos	rdf:type	owl:Class ;
-	rdfs:label	"Classificação de Pilotos",
+	rdfs:label	"Classificação de Pilotos";
+	rdfs:subClassOf
     [   rdf:type    owl:Restriction ;
         owl:onProperty :pontos ;
         owl:onDataRange rdf:XMLLiteral ;
@@ -169,7 +175,8 @@
 
 ###  http://semantica.academiatech.com/oficina002/Corrida
 :Corrida	rdf:type	owl:Class ;
-	rdfs:label	"Corrida",
+	rdfs:label	"Corrida";
+	rdfs:subClassOf
     [   rdf:type    owl:Restriction ;
         owl:onProperty :slug_topico ;
         owl:onDataRange rdf:XMLLiteral ;
@@ -198,7 +205,8 @@
 
 ###  http://semantica.academiatech.com/oficina002/CriteriosPontuacao
 :CriteriosPontuacao	rdf:type	owl:Class ;
-	rdfs:label	"Critérios de Pontuação",
+	rdfs:label	"Critérios de Pontuação";
+	rdfs:subClassOf
     [   rdf:type    owl:Restriction ;
         owl:onProperty :pontos ;
         owl:onDataRange rdf:XMLLiteral ;
@@ -212,7 +220,8 @@
 
 ###  http://semantica.academiatech.com/oficina002/GP
 :GP	rdf:type	owl:Class ;
-	rdfs:label	"GP",
+	rdfs:label	"GP";
+	rdfs:subClassOf
     [   rdf:type    owl:Restriction ;
         owl:onProperty :nome ;
         owl:onDataRange rdf:XMLLiteral ;
@@ -221,7 +230,8 @@
 
 ###  http://semantica.academiatech.com/oficina002/GridLargada
 :GridLargada	rdf:type	owl:Class ;
-	rdfs:label	"Grid de Largada",
+	rdfs:label	"Grid de Largada";
+	rdfs:subClassOf
     [   rdf:type    owl:Restriction ;
         owl:onProperty :fila ;
         owl:onDataRange rdf:XMLLiteral ;
@@ -240,7 +250,8 @@
 
 ###  http://semantica.academiatech.com/oficina002/Resultado
 :Resultado	rdf:type	owl:Class ;
-	rdfs:label	"Resultado",
+	rdfs:label	"Resultado";
+	rdfs:subClassOf
     [   rdf:type    owl:Restriction ;
         owl:onProperty :tempo ;
         owl:onDataRange rdf:XMLLiteral ;

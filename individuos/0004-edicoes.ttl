@@ -1,16 +1,16 @@
 prefix academia: <http://semantica.academiatech.com/oficina002/>
-INSERT INTO <http://semantica.academiatech.com/oficina002/Campeonato>
+INSERT INTO academia:
 { 
   <http://semantica.academiatech.com/oficina002/Campeonato/1> academia:nome "Campeonato de Fórmula 1";
-						academia:slug_topico "campeonato-formula-1".
-}
-
-INSERT INTO <http://semantica.academiatech.com/oficina002/EdicaoCampeonato>
-{ 
+						academia:slug_topico "campeonato-formula-1";
+						rdfs:type academia:Campeonato.
   <http://semantica.academiatech.com/oficina002/EdicaoCampeonato/1> academia:nome "Campeonato de Fórmula 1 2011";
-						academia:slug_topico "formula-1-2011".
+						academia:slug_topico "formula-1-2011";
+						rdfs:type academia:EdicaoCampeonato.
   <http://semantica.academiatech.com/oficina002/EdicaoCampeonato/2> academia:nome "Campeonato de Fórmula 1 2012";
-						academia:slug_topico "formula-1-2012".
+						academia:slug_topico "formula-1-2012";
+						rdfs:type academia:EdicaoCampeonato.
   <http://semantica.academiatech.com/oficina002/EdicaoCampeonato/3> academia:nome "Campeonato de Fórmula 1 2013";
-						academia:slug_topico "formula-1-2013".
+						academia:slug_topico "formula-1-2013";
+						rdfs:type academia:EdicaoCampeonato.
 }

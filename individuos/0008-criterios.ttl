@@ -1,24 +1,35 @@
 prefix academia: <http://semantica.academiatech.com/oficina002/>
-INSERT INTO <http://semantica.academiatech.com/oficina002/CriteriosPontuacao>
+INSERT INTO academia:
 { 
   <http://semantica.academiatech.com/oficina002/CriteriosPontuacao/1> academia:posicao "1" ;
-          academia:pontos "25" .
+          academia:pontos "25";
+          rdfs:type academia:CriteriosPontuacao.
   <http://semantica.academiatech.com/oficina002/CriteriosPontuacao/2> academia:posicao "2" ;
-          academia:pontos "20" .
+          academia:pontos "20";
+            rdfs:type academia:CriteriosPontuacao.
+          
   <http://semantica.academiatech.com/oficina002/CriteriosPontuacao/3> academia:posicao "3" ;
-          academia:pontos "15" .
+          academia:pontos "15";
+            rdfs:type academia:CriteriosPontuacao.
   <http://semantica.academiatech.com/oficina002/CriteriosPontuacao/4> academia:posicao "4" ;
-          academia:pontos "10" .
+          academia:pontos "10";
+            rdfs:type academia:CriteriosPontuacao.
   <http://semantica.academiatech.com/oficina002/CriteriosPontuacao/5> academia:posicao "5" ;
-          academia:pontos "8" .
+          academia:pontos "8";
+            rdfs:type academia:CriteriosPontuacao.
   <http://semantica.academiatech.com/oficina002/CriteriosPontuacao/6> academia:posicao "6" ;
-          academia:pontos "6" .
+          academia:pontos "6";
+            rdfs:type academia:CriteriosPontuacao.
   <http://semantica.academiatech.com/oficina002/CriteriosPontuacao/3> academia:posicao "7" ;
-          academia:pontos "5" .
+          academia:pontos "5";
+            rdfs:type academia:CriteriosPontuacao.
   <http://semantica.academiatech.com/oficina002/CriteriosPontuacao/4> academia:posicao "8" ;
-          academia:pontos "3" .
+          academia:pontos "3";
+            rdfs:type academia:CriteriosPontuacao.
   <http://semantica.academiatech.com/oficina002/CriteriosPontuacao/5> academia:posicao "9" ;
-          academia:pontos "2" .
+          academia:pontos "2";
+            rdfs:type academia:CriteriosPontuacao.
   <http://semantica.academiatech.com/oficina002/CriteriosPontuacao/6> academia:posicao "10" ;
-          academia:pontos "1" .
+          academia:pontos "1";
+            rdfs:type academia:CriteriosPontuacao.
 }
